@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lit Starter Kit</title>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="../node_modules/lit/polyfill-support.js"></script>
+
+  <script type="module" src="../out/index.js"></script>
+  <!-- <script type="module" src="../out/w7-dp-wrapper.js"></script> !-->
+</head>
+
+<body>
+  <w7-dp-wrapper id="1234" calendar="Jalali" locale="fa">
+    <w7-dp-input>
+      <w7-dp-input-part name="YYYY"></w7-dp-input-part>
+      <w7-dp-input-part name="M"></w7-dp-input-part>
+      <w7-dp-input-part name="D"></w7-dp-input-part>
+      <!-- <open-datepicker-input-part part-name="YY"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="MM"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="M"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part -->
+      <!--   part-name="MMMM" -->
+      <!-- ></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part -->
+      <!--   part-name="MMM" -->
+      <!-- ></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="DD"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="D"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part -->
+      <!--   part-name="dddd" -->
+      <!-- ></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part -->
+      <!--   part-name="ddd" -->
+      <!-- ></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="dd"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="d"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="HH"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="H"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="hh"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="h"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="mm"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="m"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="ss"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="s"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part -->
+      <!--   part-name="SSS" -->
+      <!-- ></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="A"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="a"></open-datepicker-input-part> -->
+      <!-- <open-datepicker-input-part part-name="Z"></open-datepicker-input-part> -->
+    </w7-dp-input>
+    <!-- <w7-dp-picker>
+      <w7-dp-week>
+        <div slot="week-day">
+          <div>
+            <div slot="week-day-short"></div>
+            <p>
+              template
+            </p>
+          </div>
+        </div>
+      </w7-dp-week>
+    </w7-dp-picker> -->
+    <!-- <open-datepicker-calendar> -->
+    <!--   <open-datepicker-month-picker></open-datepicker-month-picker> -->
+    <!--   <open-datepicker-date-picker></open-datepicker-date-picker> -->
+    <!--   <open-datepicker-year-picker></open-datepicker-year-picker> -->
+    <!-- </open-datepicker-calendar> -->
+  </w7-dp-wrapper>
+</body>
+
+<script type="module">
+  const els = document.querySelectorAll('w7-dp-wrapper');
+
+  // console.log("******", els[0].getData())
+  // els.forEach((e) => e.setAttribute('timestamp', new Date().getTime()));
+</script>
+
+</html>

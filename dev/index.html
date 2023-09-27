@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;my-element> Demo</title>
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="./node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="./out/oo-datepicker.js"></script>
+    <script type="module">
+      import {OoDatepicker} from './out/oo-datepicker.js';
+      const event = new CustomEvent('static-value-changed');
+
+      OoDatepicker.config.calendar = 'jalali';
+      window.dispatchEvent(event);
+      // console.log(OoDatepicker.config.calendar);
+    </script>
+  </head>
+  <body>
+    <oo-datepicker calendar="jalali"> </oo-datepicker>
+    <oo-datepicker calendar="jalali"> </oo-datepicker>
+    <oo-datepicker calendar="jalali"> </oo-datepicker>
+  </body>
+</html>

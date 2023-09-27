@@ -1,0 +1,16 @@
+/node_modules/
+/lib/
+/out/
+/test/
+custom-elements.json
+# top level source
+my-element.js
+my-element.js.map
+my-element.d.ts
+my-element.d.ts.map
+# only generated for size check
+my-element.bundled.js
+
+# my personal todo list
+TODO.txt
+NOTE.md
